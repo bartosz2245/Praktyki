@@ -1,0 +1,757 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Przygotowanie do EE.08</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
+    <script src="efect.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu"><span style="font-size: 2.5em;">Przygotowanie do egzaminu EE.08</span>
+            <ol>
+                <li><a href="index.html">Główna</a></li>
+                <li><a href="#">UTK</a>
+                    <ul>
+                      <li><a href="sysliczb.html">Systemy liczbowe</a></li>
+                        <li><a href="jednostki.html">Układy cyfrowe</a></li>
+                        <li><a href="plyta.html">Płyta główna</a></li>
+                        <li><a href="procesor.html">Procesor</a></li>
+                        <li><a href="ram.html">Pamięć RAM</a></li>
+                        <li><a href="karta.html">Karta graficzna</a></li>
+                        <li><a href="dysk.html">Dysk twardy</a></li>
+                        <li><a href="monitor.html">Monitor</a></li>
+                        <li><a href="inter.html">Interfejsy</a></li>
+                        <li><a href="wejsciowe.html">Urządzenia peryferyjne</a></li>
+                        <li><a href="drukarka.html">Drukarka</a></li>
+                        <li><a href="Zasilacz.html">Zasilacz</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Systemy operacyjne</a>
+                    <ul>
+                      <li><a href="licencje.html">Licencje</a></li>
+                        <li><a href="polecenia_windows.html">Polecenia windows</a></li>
+                        <li><a href="systemy_plików.html">Systemy plików</a></li>
+                        <li><a href="rejestr_systemowy.html">Rejestr systemowy</a></li>
+                        <li><a href="partycje.html">Partycje</a></li>
+                        <li><a href="linux.html">Linux</a></li>
+                        <li><a href="linux_komendy.html">Linux komendy</a></li>
+                        <li><a href="bezpieczenstwo.html">Bezpieczeństwo</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Administracja S/O</a>
+                    <ul>
+                      <li><a href="konf.html">Konfiguracja interfejsów sieciowych</a></li>
+                      <li><a href="directory.html">Active Directory</a></li>
+                      <li><a href="dhcp.html">Instalacja i konfiguracja serwera DHCP</a></li>
+                        <li><a href="mobilny.html">Profil mobilny</a></li>
+                        <li><a href="gpo.html">Zasady grupy</a></li>
+                        <li><a href="dns.html">DNS i IIS</a></li>
+                      </ul>
+                </li>
+                <li><a href="linki.html">Przydatne strony</a></li>
+                <li><a href="my.html">O nas</a></li>
+            </ol>
+        </div>
+        <div class="main">
+
+            <h2>Pomoc</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>man</strong>&nbsp;&ndash;&nbsp;wyświetla stronę manuala dla polecenia 'program'</dt>
+                <dd>
+                    <ul>
+                        <li><em>man program</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>info</strong>&nbsp;&ndash;&nbsp;podobnie jak man, wyświetla stronę pomocy dla polecenia 'program'.</dt>
+                <dd>
+                    <p>Gdy nie znajdzie strony info, szuka strony man i ja wyświetla.</p>
+                    <ul>
+                        <li><em>info program, pinfo program</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>--help</strong>&nbsp;&ndash;&nbsp;każdy program ma opcję --help lub -h, kt&oacute;ra wyświetla kr&oacute;tką pomoc</dt>
+                <dd>
+                    <ul>
+                        <li><em>jakis_program --help</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <h2>Logowanie</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>logout</strong>&nbsp;&ndash;&nbsp;komenda służąca do wylogowania się z terminala</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>exit</strong>&nbsp;&ndash;&nbsp;komenda służąca do zakończenia procesu powłoki: tcsh, bash, itp.</dt>
+                <dd>
+                    <p>Może być używana w skryptach. Pozwala też zwr&oacute;cić kod wyjścia ze skryptu:</p>
+                    <ul>
+                        <li><em>exit</em></li>
+                        <li><em>exit 127</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>passwd</strong>&nbsp;&ndash;&nbsp;zmień hasło użytkownika</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>^D</strong>&nbsp;&ndash;&nbsp;(Ctrl-D) wysyła komunikat EOF (end-of-file) do terminala</dt>
+                <dd>
+                    <p>Oznacza koniec wprowadzania danych. W powłoce 'bash' skutkuje zazwyczaj zamknięciem terminala</p>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>whoami</strong>&nbsp;&ndash;&nbsp;wyświetla nazwę użytkownika</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>id</strong>&nbsp;&ndash;&nbsp;wyświetla obecną nazwę i grupę użytkownika oraz ich numery (UID i GID)</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>su</strong>&nbsp;&ndash;&nbsp;komenda do przelogowania się jako inny użytkownik (su, od 'switch user')</dt>
+                <dd>
+                    <p>Pozwala, w tym samym terminalu, zmienić uprawnienia do wykonywania komend chwilowo na innego użytkownika (zmienić aktualny UID i GID)</p>
+                    <ul>
+                        <li><em>su username</em>&nbsp;&ndash; zmień użytkownika na użytkownika o nazwie 'username'</li>
+                        <li><em>su&nbsp;- username &nbsp;</em>&nbsp;&ndash; zmień użytkownika, wyczyść zmienne środowiskowe i ustaw nowe wartości zmiennych HOME, SHELL, USER, LOGNAME, PATH</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>finger</strong>&nbsp;&ndash;&nbsp;wypisuje wszystkich użytkownik&oacute;w obecnie zalogowanych na danej maszynie (i ich terminale)</dt>
+                <dd>
+                    <ul>
+                        <li><em>finger</em></li>
+                        <li><em>finger @komputer</em>&nbsp;&ndash; użytkownicy zalogowani na komputerze o nazwie 'komputer;</li>
+                        <li><em>finger username</em>&nbsp;&ndash; wypisuje informacje o użytkowniku 'username' i wszystkie terminale na kt&oacute;rych jest zalogowany</li>
+                        <li><em>finger Marek</em>&nbsp;&ndash; wypisuje informacje o wszystkich użytkownikach o imieniu 'marek'</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>w</strong>&nbsp;&ndash;&nbsp;podobnie jak finger wypisuje zalogowanych użytkownik&oacute;w i ich aktywne terminale</dt>
+                <dd></dd>
+            </dl>
+            <div>&nbsp;</div>
+            <h2>Podstawowe komendy
+                <a name="r__data_podstawowe_txt"></a>
+            </h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>cd</strong>&nbsp;&ndash;&nbsp;zmienia aktualny katalog (od 'change directory')</dt>
+                <dd>
+                    <ul>
+                        <li><em>cd dirname</em>&nbsp;&ndash; zmienia aktualny katalog na 'dirname'</li>
+                        <li><em>cd dir1/dir2/dir3</em>&nbsp;&ndash; wchodzi do katalogu 'dir3', kt&oacute;ry jest w katalogu 'dir2', kt&oacute;ry jest w 'dir1'</li>
+                        <li><em>cd &nbsp;</em>&nbsp;&ndash; z dowolnego miejsca, zmienia katalog na domowy</li>
+                        <li><em>cd ..</em>&nbsp;&ndash; przechodzi do katalogu o jeden wyższego w drzewie katalog&oacute;w niż obecny</li>
+                        <li><em>cd /home/dir</em>&nbsp;&ndash; z dowolnego miejsca, przechodzi do katalogu zaczynając od początku drzewa: /</li>
+                        <li><em>cd&nbsp;-&nbsp;</em>&nbsp;&ndash; przechodzi do poprzedniego katalogu</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>pwd</strong>&nbsp;&ndash;&nbsp;wypisuje ścieżkę obecnego katalogu (od 'print working directory')</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>ls</strong>&nbsp;&ndash;&nbsp;listuje katalog</dt>
+                <dd>
+                    <ul>
+                        <li><em>ls</em>&nbsp;&ndash; listuje katalog . (ls .)</li>
+                        <li><em>ls plik1 plik2 plik3</em>&nbsp;&ndash; listuje tylko wymienione pliki</li>
+                        <li><em>ls *.txt</em>&nbsp;&ndash; wypisze wszystkie pliki o nazwie kończącej się na '.txt'</li>
+                        <li><em>ls katalog1 katalog2</em>&nbsp;&ndash; listuje wymienione katalogi</li>
+                        <li><em>ls -l</em>&nbsp;&ndash; szczeg&oacute;łowa lista</li>
+                        <li><em>ls -a</em>&nbsp;&ndash; wypisuje r&oacute;wnież ukryte pliki (czyli te kt&oacute;rych nazwa zaczyna się kropką)</li>
+                        <li><em>ls -R</em>&nbsp;&ndash; listuje katalogi rekursywnie (czyli wyświetla r&oacute;wnież zawartość podkatalog&oacute;w)</li>
+                        <li><em>ls -d</em>&nbsp;&ndash; wyświetla tylko nazwy katalog&oacute;w, tak jak zwyczajnych plik&oacute;w, czyli nie listuje ich zawartości</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>cat</strong>&nbsp;&ndash;&nbsp;wypisuje wszystkie podane mu pliki na standardowe wyjście</dt>
+                <dd>
+                    <ul>
+                        <li><em>cat plik</em>&nbsp;&ndash; jeśli nie przekierujemy standardowego wyjścia do innego pliku (&gt;, &gt;&gt;) lub programu (|), to wypisze plik na ekran</li>
+                        <li><em>cat plik1 plik2 plik3</em>&nbsp;&ndash; wypisze po kolei zawartość wszystkich plik&oacute;w</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>tac</strong>&nbsp;&ndash;&nbsp;wypisuje wszystkie podane mu pliki na standardowe wyjście, ale w odwraca kolejność linii</dt>
+                <dd>
+                    <ul>
+                        <li><em>tac plik1 plik2</em>&nbsp;&ndash; wypisze połączone oba pliki, od ostatniej do pierwszej linii</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>echo</strong>&nbsp;&ndash;&nbsp;powtarza na standardowym wyjściu słowa podane w argumencie</dt>
+                <dd>
+                    <ul>
+                        <li><em>echo costam wypisz, czy echo "costam wypisz"</em>&nbsp;&ndash; wypisze 'costam wypisz' i zakończy znakiem nowej linii</li>
+                        <li><em>echo -n "costam wypisz"</em>&nbsp;&ndash; po wypisaniu argument&oacute;w, nie wypisze znaku nowej linii</li>
+                        <li><em>echo $HOME</em>&nbsp;&ndash; wypisuje zawartość zmiennej środowiskowej HOME</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>wc</strong>&nbsp;&ndash;&nbsp;liczy linie, słowa, i znaki w pliku</dt>
+                <dd>
+                    <p>gdy nie podamy argumentu, czyta ze standardowego wejścia</p>
+                    <ul>
+                        <li><em>cat plik1 plik2 | wc -l</em>&nbsp;&ndash; policzy wszystkie linie z połączonych plik&oacute;w plik1 plik2</li>
+                        <li><em>wc plik</em>&nbsp;&ndash; wypisze linie słowa i znaki oraz nazwę pliku</li>
+                        <li><em>wc -m</em>&nbsp;&ndash; tylko znaki (lub --chars)</li>
+                        <li><em>wc -l</em>&nbsp;&ndash; tylko linie (lub --lines)</li>
+                        <li><em>wc -w</em>&nbsp;&ndash; tylko słowa (lib --words)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>less</strong>&nbsp;&ndash;&nbsp;wygodne i szybkie przeglądanie plik&oacute;w tekstowych</dt>
+                <dd>
+                    <ul>
+                        <li><em>less plik</em>&nbsp;&ndash; wyświetla zawartość pliku i pozwala przewijać strony (q-wyjście)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <div>&nbsp;</div>
+            <h2>Pliki i katalogi</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>touch</strong>&nbsp;&ndash;&nbsp;zmienia czas dostępu i modyfikacji pliku, lub jeśli plik nie istnieje - tworzy go.</dt>
+                <dd>
+                    <ul>
+                        <li><em>touch plik</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>cp</strong>&nbsp;&ndash;&nbsp;kopiuje plik</dt>
+                <dd>
+                    <ul>
+                        <li><em>cp plik1 plik2</em>&nbsp;&ndash; stworzy ./plik2 identyczny z plik1</li>
+                        <li><em>cp plik3 ../katalog/jakis/</em>&nbsp;&ndash; stworzy plik ../katalog/jakis/plik3</li>
+                        <li><em>cp pom.* podkatalog/</em>&nbsp;&ndash; skopiuje wszystkie pliki zaczynające się na 'pom.' do ./podkatalog/</li>
+                        <li><em>cp plik5 ~/katalog/jakis/pliczek</em>&nbsp;&ndash; stworzy plik ~/katalog/jakis/pliczek</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>mv</strong>&nbsp;&ndash;&nbsp;przesuwa plik (tym samym służy r&oacute;wnież do zmiany nazwy)</dt>
+                <dd>
+                    <ul>
+                        <li><em>mv plik1 plik2</em>&nbsp;&ndash; zmieni nazwę pliku z ./plik1 na plik2</li>
+                        <li><em>mv plik3 ../katalog/jakis/</em>&nbsp;&ndash; przesunie plik do ../katalog/jakis/plik3</li>
+                        <li><em>mv plik4 podkatalog/</em>&nbsp;&ndash; przesunie plik ./podkatalog/plik4</li>
+                        <li><em>mv plik5 ~/katalog/jakis/pliczek</em>&nbsp;&ndash; przesunie i zmieni nazwę ~/katalog/jakis/pliczek</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>rm</strong>&nbsp;&ndash;&nbsp;kasuje plik</dt>
+                <dd>
+                    <ul>
+                        <li><em>rm plik -</em></li>
+                        <li><em>rm -r katalog</em>&nbsp;&ndash; kasuje wszystko w katalogu i wszystkie jego podkatalogi (--recursive)</li>
+                        <li><em>rm -f plik</em>&nbsp;&ndash; nie pyta się czy skasować (--force)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>mkdir</strong>&nbsp;&ndash;&nbsp;tworzy katalog</dt>
+                <dd>
+                    <ul>
+                        <li><em>mkdir moj_nowy_katalog</em></li>
+                        <li><em>mkdir /home/users/ja/moj_nowy_katalog</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>rmdir</strong>&nbsp;&ndash;&nbsp;usuwa pusty katalog</dt>
+                <dd>
+                    <ul>
+                        <li><em>rmdir katalog</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>chmod</strong>&nbsp;&ndash;&nbsp;zmienia prawa dostępu do pliku</dt>
+                <dd>
+                    <p>grupy użytkownik&oacute;w: u - user, g - group, o - others, a - all</p>
+                    <p>prawa dostępu: r - read, w - write, x - execute</p>
+                    <ul>
+                        <li><em>chmod o+r plik</em>&nbsp;&ndash; udziel innym prawo do czytania pliku</li>
+                        <li><em>chmod a-x plik</em>&nbsp;&ndash; zabierz wszystkim prawo do wykonywania pliku</li>
+                        <li><em>chmod g=rw plik</em>&nbsp;&ndash; ustaw prawa do czytania i pisania dla swojej grupy</li>
+                        <li><em>chmod -R go+w katalog</em>&nbsp;&ndash; ustawia prawa wszystkim plikom w katalogu i jego podkatalogach (--recursive)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>locate</strong>&nbsp;&ndash;&nbsp;wypisuje gdzie ostatnio, na tym komputerze, był widziany plik o podanej nazwie (lub fragmencie nazwy)</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>locate raport.txt</strong>&nbsp;&ndash;&nbsp;locate pdf</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>find</strong>&nbsp;&ndash;&nbsp;przejrzyj katalog w poszukiwaniu danego pliku</dt>
+                <dd>
+                    <ul>
+                        <li><em>find . -name raport.txt</em></li>
+                        <li><em>find /home/user -name "rap*xt"</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <div>&nbsp;</div>
+            <h2>Przekierowania</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>&gt;</strong>&nbsp;&ndash;&nbsp;przekierowanie wyjścia z programu do pliku.</dt>
+                <dd>
+                    <p>Standardowym wyjściem każdego programu jest ekran (konsola tekstowa) a standardowym wejściem jest klawiatura. Można te wejścia i wyjścia przekierowywać dowolnie.</p>
+                    <ul>
+                        <li><em>echo "ala ma kota" &gt; plik.txt</em>&nbsp;&ndash; wyjście z programu echo wpisze do pliku plik.txt</li>
+                        <li><em>ls -l &gt; lista.dat</em>&nbsp;&ndash; wypisze listę plik&oacute;w do pliku lista.dat</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>&gt;&gt;</strong>&nbsp;&ndash;&nbsp;doklejenie wyjścia z programu na koniec pliku</dt>
+                <dd>
+                    <ul>
+                        <li><em>echo "ala ma psa" &gt;&gt; plik.txt</em>&nbsp;&ndash; dopisze "ala ma psa" na koniec pliku plik.txt</li>
+                        <li><em>ls -l &gt; lista.dat</em>&nbsp;&ndash; wypisze listę plik&oacute;w do pliku lista.dat</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>|</strong>&nbsp;&ndash;&nbsp;przekierowanie wyjścia jednego programu na wejście drugiego</dt>
+                <dd>
+                    <ul>
+                        <li><em>cat plik.txt | wc -l</em>&nbsp;&ndash; cat wypisuje plik.txt na wyjście kt&oacute;re przekierowujemy na program liczący wiersze.</li>
+                        <li><em>ls -l | lpr</em>&nbsp;&ndash; program drukujący 'lpr' dostanie na wejście listę plik&oacute;w</li>
+                        <li><em>cat plik.txt | tac | grep "coś" | head &gt; cosie.txt</em>&nbsp;&ndash; wypisanie pliku.txt na program 'tac', kt&oacute;ry odwraca kolejność wierszy, wynik tego przekierowany na 'grep', kt&oacute;ry wypisze tylko linie zawierające
+                            słowo "coś", wynik tego wysłany na program 'head', kt&oacute;ry pośle dalej tylko pierwsze 10 wierszy na wyjście, kt&oacute;re przekierowaliśmy do pliku cosie.txt.</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>&gt;!</strong>&nbsp;&ndash;&nbsp;przekierowanie do pliku. Działa podobnie jak &gt;, ale kontynuuje nawet gdy plik już istnienie. Działa w "tcsh".</dt>
+                <dd>
+                    <ul>
+                        <li><em>echo "ala ma kota" &gt; plik.txt</em>&nbsp;&ndash; gdy plik.txt istnieje, ta komenda może się nie powieść.</li>
+                        <li><em>echo "ala ma kota" &gt;! plik.txt</em>&nbsp;&ndash; konieczne będzie użycie wykrzyknika &gt;!</li>
+                        <li><em>echo "ala ma kota" &gt;| plik.txt</em>&nbsp;&ndash; to samo tylko w 'bash'</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>&lt;</strong>&nbsp;&ndash;&nbsp;przekierowanie pliku jako standardowego wejścia.</dt>
+                <dd>
+                    <ul>
+                        <li><em>szachy &lt; ruchy.txt</em>&nbsp;&ndash; jeśli program szachy przyjmuje ruchy na standardowe wejście, możemy te ruchy spisać do pliku i podać programowi w ten spos&oacute;b</li>
+                        <li><em>cat ruchy.txt | szachy</em>&nbsp;&ndash; to samo można też zrobić tak</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>&lt;&lt;</strong>&nbsp;&ndash;&nbsp;podanie na wejście następujących p&oacute;źniej linii.</dt>
+                <dd>
+                    <ul>
+                        <li><em>szachy &lt;&lt; DO_KONCA<br />E2-B4<br />H5-A1<br />C6-F5<br />DO_KONCA</em>&nbsp;&ndash; podanie tzw. dokumentu w miejscu. Wszystkie następujące linie między etykietami 'DO_KONCA' będą podane na standardowe wejście programu
+                            'szachy'.
+                        </li>
+                        <li><em>echo "E2-B4<br />H5-A1<br />C6-F5" | szachy</em>&nbsp;&ndash; to samo można też zrobić tak</li>
+                        <li><em>echo -e "E2-B4\nH5-A1\nC6-F5" | szachy</em>&nbsp;&ndash; to samo można też zrobić tak</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>2&gt;</strong>&nbsp;&ndash;&nbsp;przekierowanie standardowego wyjścia dla błęd&oacute;w do pliku. Opr&oacute;cz standardowego wyjścia i wejścia, każdy program ma jeszcze standardowe wyjście dla błęd&oacute;w. Je też możemy przekierowywać, na przykład w inne miejsce niż wyjście zwykłe. Działa w "bash", nie w "tcsh".</dt>
+                <dd>
+                    <ul>
+                        <li><em>find -name "plik.*" &gt;znalezione.log 2&gt;bledy.log</em>&nbsp;&ndash; pliki znalezione przez 'find' wylądują w znalezione.log, komunikaty o błędach nie zaciemnią nam wyniku i wpiszą się do innego pliku &ndash; bledy.log</li>
+                        <li><em>cp -r dane/ backup/ 2&gt;error.log</em>&nbsp;&ndash; jeśli podczas kopiowania całego katalogu wystąpią błędy, wszystkie komunikaty zostaną wpisane do error.log</li>
+                        <li><em>( ls &gt; plik.log ) &gt;&amp; plik.err</em>&nbsp;&ndash; w 'tcsh' nie można przekierować samego wyjścia dla błęd&oacute;w, stąd konieczność takiej konstrukcji.</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>&amp;&gt; lub &gt;&amp;</strong>&nbsp;&ndash;&nbsp;przekierowanie obu wyjść do pliku.</dt>
+                <dd>
+                    <ul>
+                        <li><em>ls &gt;&amp; plik.log</em>&nbsp;&ndash; standardowe wyjście i standardowe wyjście dla błęd&oacute;w jest przekierowane do plik.log</li>
+                        <li><em>ls &gt;plik.log 2&gt;&amp;1</em>&nbsp;&ndash; to samo, ale działa tylko w 'bash'. Przekierowanie wyjścia, a potem skopiowanie go na wyjście dla błęd&oacute;w.</li>
+                        <li><em>ls &amp;&gt; plik.log</em>&nbsp;&ndash; to samo co &gt;&amp; ale w notacji bardziej właściwej dla 'bash'.</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>man bash</strong></dt>
+                <dd>
+                    <ul>
+                        <li><em>polecam aby uzyskać więcej informacji</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>man tcsh</strong></dt>
+                <dd>
+                    <ul>
+                        <li><em>polecam aby uzyskać więcej informacji</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <h2>Procesy</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>ps</strong>&nbsp;&ndash;&nbsp;wypisuje procesy uruchomione na komputerze</dt>
+                <dd>
+                    <ul>
+                        <li><em>ps</em>&nbsp;&ndash; wyświetla procesy uruchomione przez użytkownika</li>
+                        <li><em>ps a</em>&nbsp;&ndash; wyświetl r&oacute;wnież procesy innych użytkownik&oacute;w</li>
+                        <li><em>ps -l, ps -f, ps -F</em>&nbsp;&ndash; więcej informacji o procesach (od: long, full, extra full)</li>
+                        <li><em>ps f</em>&nbsp;&ndash; wyświetla drzewo zależności proces&oacute;w (od: forest)</li>
+                        <li><em>ps --help</em>&nbsp;&ndash; :P</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>bg</strong>&nbsp;&ndash;&nbsp;uruchamia na nowo zatrzymane (Ctrl-Z) zadanie, ale w tle, tak jakby zostało ono uruchomione z &amp;</dt>
+                <dd>
+                    <ul>
+                        <li><em>bg</em>&nbsp;&ndash; uruchamia ostatnio zatrzymane zadanie</li>
+                        <li><em>bg NUMER</em>&nbsp;&ndash; uruchamia zadanie o danym numerze na liście zatrzymanych zadań (jobs)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>fg</strong>&nbsp;&ndash;&nbsp;uruchamia na nowo zatrzymane (Ctrl-Z) zadanie, na pierwszym planie</dt>
+                <dd>
+                    <ul>
+                        <li><em>fg</em>&nbsp;&ndash; uruchamia ostatnio zatrzymane zadanie</li>
+                        <li><em>fg NUMER</em>&nbsp;&ndash; uruchamia zadanie o danym numerze na liście zatrzymanych zadań (jobs)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>jobs</strong>&nbsp;&ndash;&nbsp;wyświetla listę zatrzymanych zadań</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>kill</strong>&nbsp;&ndash;&nbsp;zabija podany proces</dt>
+                <dd>
+                    <p>PID - jest to numer identyfikacyjny procesu (process id), można go odczytać np. używając polecenia ps</p>
+                    <ul>
+                        <li><em>kill PID</em>&nbsp;&ndash; wysyła do procesu o numerze PID sygnał do przerwania procesu</li>
+                        <li><em>kill -KILL PID</em>&nbsp;&ndash; zabija proces bez pytania</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>&amp;</strong>&nbsp;&ndash;&nbsp;modyfikator kt&oacute;ry pozwala uruchomić od razu proces w tle.</dt>
+                <dd>
+                    <ul>
+                        <li><em>xcalc &amp;</em>&nbsp;&ndash; uruchamia program xcalc w tle, dzięki temu mamy wolną konsole</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>top</strong>&nbsp;&ndash;&nbsp;interaktywne narzędzie do monitorowania proces&oacute;w</dt>
+                <dd>
+                    <p>Sortuje procesy po ich bieżącym użyciu procesora, po użyciu pamięci, itp.</p>
+                    <p>&nbsp;</p>
+                </dd>
+            </dl>
+            <div>&nbsp;</div>
+            <h2>Edytory</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>vim</strong>&nbsp;&ndash;&nbsp;zaawansowany edytor tekstowy w trybie tekstowym</dt>
+                <dd>
+                    <p>Vi iMproved - nowa wersja znanego edytora Vi. Posiada</p>
+                    <ul>
+                        <li><em>podświetlanie składni dla wielu język&oacute;w programowania</em></li>
+                        <li><em>możliwość edycji kilku plik&oacute;w na raz</em></li>
+                        <li><em>bogatego helpa</em></li>
+                        <li><em>bardzo zaawansowane funkcje edycji</em></li>
+                        <li><em>...</em></li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>gvim</strong>&nbsp;&ndash;&nbsp;vim w trybie graficznym</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>emacs</strong>&nbsp;&ndash;&nbsp;zaawansowany edytor tekstowy w trybie graficznym</dt>
+                <dd>
+                    <p>Emacs podobnie jak Vim jest wszechstronnym edytorem obsługującym wiele język&oacute;w i posiadającym bogate funkcje.</p>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>uemacs</strong>&nbsp;&ndash;&nbsp;edytor tekstowy w trybie tekstowym</dt>
+                <dd>
+                    <p>Micro Emacs jest tekstową wersją Emacsa</p>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>joe</strong>&nbsp;&ndash;&nbsp;prosty edytor tekstowy</dt>
+                <dd>
+                    <p>Joe's Own Editor. Nadaje się do pisania prostych dokument&oacute;w</p>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>mcedit</strong>&nbsp;&ndash;&nbsp;edytor tekstowy w trybie tekstowym</dt>
+                <dd>
+                    <p>mcedit jest wbudowanym w Midnight Commandera edytorem.</p>
+                    <p>Posiada m.in. podświetlanie składni.</p>
+                </dd>
+            </dl>
+            <div>&nbsp;</div>
+            <h2>Sieć</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>pine</strong>&nbsp;&ndash;&nbsp;program do obsługi poczty</dt>
+                <dd>
+                    <p>Bardzo dobry, szybki i wygodny program do sprawdzania i wysyłania poczty elektronicznej. Jego największą zaletą jest to, że działa w trybie tekstowym, więc można uruchomić go na zdalnym terminalu.</p>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>ssh</strong>&nbsp;&ndash;&nbsp;program do zdalnego logowania używając szyfrowanego połączenia</dt>
+                <dd>
+                    <p>Najważniejszy sieciowy program. Umożliwia logowanie się na dowolny komputer na świecie, przy czym połączenie jest bezpieczne dzięki algorytmom szyfrującym opartym na kluczach RSA.</p>
+                    <ul>
+                        <li><em>ssh anatres</em>&nbsp;&ndash; zaloguje mnie na 'antares'a</li>
+                        <li><em>ssh ja@anatres</em>&nbsp;&ndash; zaloguje mnie jako użytkownika 'ja' na 'antares'a</li>
+                        <li><em>ssh ja@antares komenda</em>&nbsp;&ndash; zaloguje mnie tylko by wykonać na 'antares'ie komendę</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>scp</strong>&nbsp;&ndash;&nbsp;program do kopiowania plik&oacute;w używając szyfrowanego połączenia SSH</dt>
+                <dd>
+                    <p>scp łączy się z podanym serwerem i kopiuje podane pliki między oboma komputerami</p>
+                    <p>'scp'do połączenia używa programu 'ssh'</p>
+                    <ul>
+                        <li><em>scp plik ja@antares:~/moje_pliki/</em>&nbsp;&ndash; skopiuje plik do mojego katalogu na antaresie ~/moje_pliki/</li>
+                        <li><em>scp ja@antares:/var/log/plik .</em>&nbsp;&ndash; do bieżącego katalogu skopiuje podany plik z antaresa</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>rlogin</strong>&nbsp;&ndash;&nbsp;prosty protok&oacute;ł zdalnego logowania</dt>
+                <dd>
+                    <ul>
+                        <li><em>rlogin antares</em>&nbsp;&ndash; zaloguje mnie na 'antares'a</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>ping</strong>&nbsp;&ndash;&nbsp;program diagnostyczny sprawdzający czy istnieje połączenie sieciowe z danym komputerem.</dt>
+                <dd>
+                    <ul>
+                        <li><em>ping antares.astrouw.edu.pl</em>&nbsp;&ndash; sprawdzamy czy antares odpowiada (i jak szybko)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <h2>Dyski</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>df</strong>&nbsp;&ndash;&nbsp;wypisuje rozmiary i ilość dostępnego miejsca na zamontowanych dyskach (w kilobajtach i w procentach)</dt>
+                <dd>
+                    <ul>
+                        <li><em>df</em></li>
+                        <li><em>df /dev/sda1</em>&nbsp;&ndash; ogranicz wyniki tylko do jednej partycji</li>
+                        <li><em>df -h</em>&nbsp;&ndash; wyświetl rozmiary w wygodnych dla użytkownika jednostkach (human readable)</li>
+                        <li><em>df -m</em>&nbsp;&ndash; rozmiary w megabajtach</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>du</strong>&nbsp;&ndash;&nbsp;policz rozmiary katalog&oacute;w i plik&oacute;w zawartych w podanym katalogu</dt>
+                <dd>
+                    <ul>
+                        <li><em>du</em>&nbsp;&ndash; rozmiar obecnego katalogu</li>
+                        <li><em>du katalog</em>&nbsp;&ndash; policz rozmiar podanego katalogu</li>
+                        <li><em>du -s</em>&nbsp;&ndash; wypisz tylko sumę, a nie rozmiary poszczeg&oacute;lnych podkatalog&oacute;w</li>
+                        <li><em>du -sm</em>&nbsp;&ndash; wypisz tylko sumę dla każdego katalogu i podaj rozmiar w megabajtach</li>
+                        <li><em>du -sm dir* | sort -n</em>&nbsp;&ndash; posortuj wyniki od najmniejszego do największego z podanych katalog&oacute;w</li>
+                    </ul>
+                </dd>
+            </dl>
+            <div>&nbsp;</div>
+            <h2>Środowisko</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>which</strong>&nbsp;&ndash;&nbsp;wypisuje gdzie znajduje się plik z programem o podanej nazwie</dt>
+                <dd>
+                    <ul>
+                        <li><em>which ls</em>&nbsp;&ndash; zlokalizuj plik, kt&oacute;ry zostanie uruchomiony po wywołaniu komendy 'ls'</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>env</strong>&nbsp;&ndash;&nbsp;wypisuje aktualne wartości wszystkich zmiennych środowiskowych</dt>
+                <dd></dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>alias</strong>&nbsp;&ndash;&nbsp;ustawia i wypisuje definicje skr&oacute;towych komend ('alias&oacute;w'), kt&oacute;re są obecnie ustawione w środowisku</dt>
+                <dd>
+                    <ul>
+                        <li><em>alias</em>&nbsp;&ndash; wypisuje aliasy</li>
+                        <li><em>alias ls 'ls --color=auto'</em>&nbsp;&ndash; definiuje nowy alias o nazwie 'ls' i podanej treści</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt></dt>
+                <dd></dd>
+            </dl>
+            <div>&nbsp;</div>
+            <h2>Urządzenia systemowe</h2>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>/dev/null</strong>&nbsp;&ndash;&nbsp;studnia bez dna. Urządzenie do kt&oacute;rego możemy pisać do woli, a wszystko co wpiszemy przepada.</dt>
+                <dd>
+                    <ul>
+                        <li><em>find -name "plik.*" 2&gt;/dev/null</em>&nbsp;&ndash; jeśli wsr&oacute;d wynik&oacute;w szukania nie chcemy oglądać komunikat&oacute;w o błędach</li>
+                        <li><em>latex plik.tex &gt;/dev/null</em>&nbsp;&ndash; program wykona wszystkie czynności, ale nie zaśmieci nam konsoli logami</li>
+                        <li><em>licz &gt;/dev/null 2&gt;/dev/null &amp;</em>&nbsp;&ndash; jeśli chcemy puścić program w tle, a potem się wylogować (zamknąć konsole), musimy przekierować wyjścia z programu tak, aby nie pr&oacute;bował pisać do nieistniejącego
+                            już urządzenia. Urządzenie 'null' jest zawsze.</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>/dev/zero</strong>&nbsp;&ndash;&nbsp;składnica zer. Jest to urządzenie do czytania, kt&oacute;re nigdy się nie kończy. Można z niego wczytać dowolną liczbę bajt&oacute;w, a wszystkie będą r&oacute;wne zero.</dt>
+                <dd>
+                    <ul>
+                        <li><em>dd if=/dev/zero of=zera.txt count=1000</em>&nbsp;&ndash; wczyta tysiąc zer do pliku 'zera.txt'.</li>
+                        <li><em>cat /dev/zero</em>&nbsp;&ndash; radzę nie pr&oacute;bować</li>
+                        <li><em>head -c 10 /dev/zero &gt; zera.txt</em>&nbsp;&ndash; wypisze pierwsze 10 bajt&oacute;w z '/dev/zero' do pliku 'zera.txt'. W wyniku mamy plik z dziesięcioma zerami.</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>/dev/random</strong>&nbsp;&ndash;&nbsp;zbi&oacute;r liczb losowych. Jest to urządzenie do czytania, kt&oacute;re daje prawdziwie losowe dane. Korzysta przy tym z systemowego zbiornika entropii, kt&oacute;ry jest uzupełniany dzięki r&oacute;żnym przejawom aktywności użytkownika. Zbi&oacute;r ten może się wyczerpać, dlatego nie należy z niego czytać wielu liczb na raz.</dt>
+                <dd>
+                    <ul>
+                        <li><em>od -t x1 -N 100 /dev/random</em>&nbsp;&ndash; wypisze pierwsze 100 losowych bajt&oacute;w z urządzenia /dev/random na ekran (w systemie szesnastkowym)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>/dev/urandom</strong>&nbsp;&ndash;&nbsp;zbi&oacute;r liczba pseudolosowych. Jest to urządzenie do czytania, kt&oacute;re podaje liczby pseudolosowe. Ma ich do dyspozycji dowolnie dużo.</dt>
+                <dd>
+                    <ul>
+                        <li><em>od -t d1 -N 100 /dev/urandom</em>&nbsp;&ndash; wypisze pierwsze 100 bajt&oacute;w z urządzenia /dev/urandom na ekran (w systemie dziesiętnym)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>/dev/stdin</strong>&nbsp;&ndash;&nbsp;standardowe wejście aktualnego procesu. Każdy proces kt&oacute;ry pr&oacute;buje czytać z tego urządzenia, dostanie zawartość własnego wejścia.</dt>
+                <dd>
+                    <ul>
+                        <li><em>echo "ma kota" | cat ala.txt /dev/stdin</em>&nbsp;&ndash; program cat połączy zawartość pliku ala.txt z tym co dostał na standardowe wejście</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>/dev/stdout</strong>&nbsp;&ndash;&nbsp;standardowe wyjście aktualnego programu. Gdy proces wypisze coś do pliku /dev/stdout, pojawi się to na jego standardowym wyjściu.</dt>
+                <dd>
+                    <ul>
+                        <li><em>a2ps --output plik.ps plik.txt</em>&nbsp;&ndash; program a2ps stworzy dokument postscript w pliku plik.ps</li>
+                        <li><em>a2ps --output /dev/stdout plik.txt</em>&nbsp;&ndash; program a2ps wypisze dokument na ekran (jego standardowe wyjście)</li>
+                    </ul>
+                </dd>
+            </dl>
+            <hr class="komenda" />
+            <dl class="kom">
+                <dt><strong>/dev/stderr</strong>&nbsp;&ndash;&nbsp;standardowe wyjście dla błęd&oacute;w aktualnego programu. Gdy proces wypisze coś do pliku /dev/stderr, pojawi się to na jego standardowym wyjściu dla błęd&oacute;w.</dt>
+            </dl>
+            <a>Bibliografia</a>
+            <a href="http://www.astrouw.edu.pl/~jskowron////pracownia/komendy/#r__data_login_txt">polecenia linux</a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE HTML>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Przygotowanie do EE.08</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
+    <script src="efect.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="menu"><span style="font-size: 2.5em;">Przygotowanie do egzaminu EE.08</span>
+            <ol>
+                <li><a href="index.html">Główna</a></li>
+                <li><a href="#">UTK</a>
+                    <ul>
+                        <li><a href="sysliczb.html">Systemy liczbowe</a></li>
+                        <li><a href="jednostki.html">Układy cyfrowe</a></li>
+                        <li><a href="plyta.html">Płyta główna</a></li>
+                        <li><a href="procesor.html">Procesor</a></li>
+                        <li><a href="ram.html">Pamięć RAM</a></li>
+                        <li><a href="karta.html">Karta graficzna</a></li>
+                        <li><a href="dysk.html">Dysk twardy</a></li>
+                        <li><a href="monitor.html">Monitor</a></li>
+                        <li><a href="inter.html">Interfejsy</a></li>
+                        <li><a href="wejsciowe.html">Urządzenia peryferyjne</a></li>
+                        <li><a href="drukarka.html">Drukarka</a></li>
+                        <li><a href="Zasilacz.html">Zasilacz</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Systemy operacyjne</a>
+                    <ul>
+                        <li><a href="licencje.html">Licencje</a></li>
+                        <li><a href="polecenia_windows.html">Polecenia windows</a></li>
+                        <li><a href="systemy_plików.html">Systemy plików</a></li>
+                        <li><a href="rejestr_systemowy.html">Rejestr systemowy</a></li>
+                        <li><a href="partycje.html">Partycje</a></li>
+                        <li><a href="linux.html">Linux</a></li>
+                        <li><a href="linux_komendy.html">Linux komendy</a></li>
+                        <li><a href="bezpieczenstwo.html">Bezpieczeństwo</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Administracja S/O</a>
+                    <ul>
+                        <li><a href="konf.html">Konfiguracja interfejsów sieciowych</a></li>
+                        <li><a href="directory.html">Active Directory</a></li>
+                        <li><a href="dhcp.html">Instalacja i konfiguracja serwera DHCP</a></li>
+                          <li><a href="mobilny.html">Profil mobilny</a></li>
+                          <li><a href="gpo.html">Zasady grupy</a></li>
+                          <li><a href="dns.html">DNS i IIS</a></li>
+                      </ul>
+                </li>
+                <li><a href="linki.html">Przydatne strony</a></li>
+                <li><a href="my.html">O nas</a></li>
+            </ol>
+        </div>
+        <div class="main">
+            <dl>
+                <dt>CPU (ang. Central Processing Unit) </dt>
+                <dd>- układ cyfrowy wykonany jako pojedynczy układ scalony o wielkim stopniu integracji zdolny do wykonywania operacji cyfrowych według dostarczonego ciągu instrukcji.
+                </dd>
+            </dl>
+            <p style="font-weight: bold;">Schemat budowy mikroprocesora</p>
+            <img alt="Tu jest obraz" src="schemat.jpg"><br>
+            RAM - Pamięć operacyjna<br>
+            ALU - Jednostka arytmetyczno-logiczna<br>
+            FPU - Koprocesor arytmetyczny, jednostka zmiennoprzecinkowa<br>
+            ACC - (lub A) Akumulator<br>
+            FLAG - Rejestr flagowy (stanu, statusu)<br>
+            CU - Układ sterowania<br>
+            IR - Rejestr instrukcji<br>
+            <dl>
+                <dt>Rejestry </dt>
+                <dd>- komórki pamięci o niewielkich rozmiarach umieszczone wewnątrz procesora i służące do przechowywania tymczasowych wyników obliczeń, adresów lokacji w pamięci operacyjnej itd.
+                </dd>
+                <dt>Magistrale </dt>
+                <dd>(ang. bus) – zespół linii przenoszących sygnały oraz układów wejścia-wyjścia służących do przesyłania sygnałów między połączonymi urządzeniami w systemach mikroprocesorowych. Wyróżniamy magistrale: danych, adresowa, pamięci, sterująca.
+                </dd>
+                <dt>Pamięć podręczna</dt>
+                <dd>(ang. cache) – mechanizm, w którym część spośród danych zgromadzonych w źródłach o długim czasie dostępu i niższej przepustowości jest dodatkowo przechowywana w pamięci o lepszych parametrach.
+                </dd>
+                <dt>Pamięć podręczna procesora (ang. CPU cache)</dt>
+                <dd>- jest pamięcią typu SRAM o krótkim czasie dostępu. Zlokalizowana jest często bezpośrednio w jądrze procesora.
+                </dd>
+            </dl>
+            Poziomy pamięci:
+            <ul>
+                <li>L1 - pamięć podręczna pierwszego poziomu, .lokalizowana we wnętrzu procesora przyspiesza dostęp do bloków pamięci wyższego poziomu.</li>
+                <li>L2 - pamięć podręczna drugiego poziomu, jest wykorzystywana jako bufor pomiędzy pamięcią RAM a jądrem procesora i pamięcią L1.</li>
+                <li>L3 - pamięć podręczna procesora trzeciego poziomu, jest wykorzystywana, gdy pamięć L2 jest niewystarczająca aby pomieścić potrzebne dane.</li>
+            </ul>
+            <img alt="Tu jest obraz" src="proc.jpg">
+            <hr>
+            <p>Bibliografia:<br>
+            <a href="http://egzamin-e12.blogspot.com/2017/11/repetytorium-cz-31-mikroprocesor.html">http://egzamin-e12.blogspot.com/2017/11/repetytorium-cz-31-mikroprocesor.html</a></p>
+
+        </div>
+       
+    </div>
+  </body>
+</html>
+

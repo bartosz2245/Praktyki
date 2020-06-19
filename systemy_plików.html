@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Przygotowanie do EE.08</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
+    <script src="efect.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu"><span style="font-size: 2.5em;">Przygotowanie do egzaminu EE.08</span>
+            <ol>
+                <li><a href="index.html">Główna</a></li>
+                <li><a href="#">UTK</a>
+                    <ul>
+                      <li><a href="sysliczb.html">Systemy liczbowe</a></li>
+                        <li><a href="jednostki.html">Układy cyfrowe</a></li>
+                        <li><a href="plyta.html">Płyta główna</a></li>
+                        <li><a href="procesor.html">Procesor</a></li>
+                        <li><a href="ram.html">Pamięć RAM</a></li>
+                        <li><a href="karta.html">Karta graficzna</a></li>
+                        <li><a href="dysk.html">Dysk twardy</a></li>
+                        <li><a href="monitor.html">Monitor</a></li>
+                        <li><a href="inter.html">Interfejsy</a></li>
+                        <li><a href="wejsciowe.html">Urządzenia peryferyjne</a></li>
+                        <li><a href="drukarka.html">Drukarka</a></li>
+                        <li><a href="Zasilacz.html">Zasilacz</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Systemy operacyjne</a>
+                    <ul>
+                      <li><a href="licencje.html">Licencje</a></li>
+                        <li><a href="polecenia_windows.html">Polecenia windows</a></li>
+                        <li><a href="systemy_plików.html">Systemy plików</a></li>
+                        <li><a href="rejestr_systemowy.html">Rejestr systemowy</a></li>
+                        <li><a href="partycje.html">Partycje</a></li>
+                        <li><a href="linux.html">Linux</a></li>
+                        <li><a href="linux_komendy.html">Linux komendy</a></li>
+                        <li><a href="bezpieczenstwo.html">Bezpieczeństwo</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Administracja S/O</a>
+                    <ul>
+                      <li><a href="konf.html">Konfiguracja interfejsów sieciowych</a></li>
+                      <li><a href="directory.html">Active Directory</a></li>
+                      <li><a href="dhcp.html">Instalacja i konfiguracja serwera DHCP</a></li>
+                        <li><a href="mobilny.html">Profil mobilny</a></li>
+                        <li><a href="gpo.html">Zasady grupy</a></li>
+                        <li><a href="dns.html">DNS i IIS</a></li>
+                      </ul>
+                </li>
+                <li><a href="linki.html">Przydatne strony</a></li>
+                <li><a href="my.html">O nas</a></li>
+            </ol>
+        </div>
+        <div class="main">
+            <h1>System plik&oacute;w</h1>
+            <p><strong>System plik&oacute;w</strong>&nbsp;- metoda przechowywania i zarządzania plikami. Dzięki temu użytkownik systemu ma do nich łatwy i swobodny dostęp.&nbsp;</p>
+            <p><strong>Podstawowe funkcje systemu plik&oacute;w:</strong></p>
+            <ul>
+                <li>otwieranie i zamykanie pliku</li>
+                <li>tworzenie i usuwanie pliku</li>
+                <li>tworzenie i usuwanie folderu</li>
+                <li>odczyt i zapis do pliku</li>
+            </ul>
+            <p><strong>Rodzaje system&oacute;w plik&oacute;w:</strong></p>
+            <p><strong>Dyskowy system plik&oacute;w</strong>&nbsp;- system plik&oacute;w pozwalający na zarządzanie danymi na stacjonarnych nośnikach danych, takich jak np. twarde dyski.&nbsp;</p>
+            <p><strong>Sieciowy system plik&oacute;w</strong>&nbsp;- protok&oacute;ł umożliwiający przesyłanie poleceń do serwera przez sieć oraz wykonywanie operacji na odległość.&nbsp;</p>
+            <p><strong>Specjalny system plik&oacute;w</strong>&nbsp;- system plik&oacute;w, kt&oacute;ry nie umożliwia zarządzania danymi. Może dostarczać interfejs, dzięki kt&oacute;remu możliwy jest dostęp do niekt&oacute;rych struktur jądra.&nbsp;</p>
+            <p><strong>System oparty na bazie danych</strong>&nbsp;- system plik&oacute;w, w kt&oacute;rych pliki są identyfikowane na podstawie swojej charakterystyki, podobnie jak w bazach danych.&nbsp;</p>
+            <p><strong>FAT 16 (DOS, Windows 98 OSR2):</strong>&nbsp;wykorzystuje adresowanie 16-bitowe daje możliwość zaadresowania 2 do potęgi 16 czyli 65 535 jednostek alokacji maksymalny rozmiar partycji to 2 GB kompatybilność ze starszymi systemami Windows
+                rozmiar jednostki alokacji mniejszy niż 64 KB silna fragmentacja plik&oacute;w pozostawienie zgubionych klastr&oacute;w.&nbsp;</p>
+            <p><strong>FAT 32 (Windows 95 OSR2, Windows 98, Windows ME):</strong>&nbsp;wykorzystuje adresowanie 32-bitowe daje możliwość zaadresowania 2 do potęgi 32 czyli 4 294 967 296 jednostek alokacji maksymalna pojemność dysku to 2 TB (w praktyce 127
+                GB) maksymalny rozmiar partycji to 32 GB rozmiar jednostek alokacji większy niż 4 KB a mniejszy niż 32 KB kompatybilność tylko z nowszymi systemami Windows rozrastanie tablicy alokacji fragmentacja w trakcie modyfikowania i kasowania plik&oacute;w
+                trwa dłużej niż w systemie FAT 16 tworzenie, kasowanie i modyfikacja plik&oacute;w pociąga za sobą zmiany w tablicy FAT&nbsp;</p>
+            <p><strong>NTFS (Windows NT, Windows 2000, Windows XP, Windows Vista):</strong>&nbsp;system plik&oacute;w nowej generacji standardowo używany w systemach Windows NT i jego następcach zaprojektowany pod kątem pracy z wieloma użytkownikami daje
+                możliwość zaadresowania 2 do potęgi 64 jednostek alokacji maksymalna pojemność dysku to 16 EB (w praktyce 2 TB) prawa dostępu do plik&oacute;w i katalog&oacute;w system zarządzania zapisem i odczytem danych księgowanie czyli mechanizm,
+                kt&oacute;ry zwiększa bezpieczeństwo systemu oraz skraca do minimum czas sprawdzania systemu plik&oacute;w po awarii możliwość szyfrowania danych możliwość kompresji danych "w locie" możliwość przydzielania przestrzeni każdemu użytkownikowi
+                osobno&nbsp;
+            </p>
+            <p><strong>Ext3 (dystrybucje Linuksa):</strong>&nbsp;nowoczesny, stabilny oraz dobrze przetestowany system plik&oacute;w oparty na systemie ext2 wysoka wydajność dzięki przeciwdziałaniu fragmentacji maksymalny rozmiar partycji to 32TB maksymalny
+                rozmiar pliki to 2TB dobrze zdefiniowany spos&oacute;b dodawania rozszerzeń niezależny od tworzącego systemu operacyjnego obsługa dziurawych plik&oacute;w automatyczne sprawdzanie systemu po awarii oraz co określony czas niska wydajność
+                dla bardzo małych plik&oacute;w journaling, czyli mechanizm księgowania, kt&oacute;ry zwiększa bezpieczeństwo systemu oraz skraca do minimum czas sprawdzania systemu plik&oacute;w po awarii indeksowane katalogi zapis synchroniczny&nbsp;</p>
+            <p><strong>HFS+ (Macintosh OS):</strong>&nbsp;stworzony przez firmę Apple Computer maksymalny rozmiar partycji to 16EB&nbsp;</p>
+            <p><strong>ISO 9660 (płyty CD, DVD):</strong>&nbsp;standardowy system plik&oacute;w płyt CD-ROM przeznaczony tylko do odczytu stworzony w celu wsp&oacute;łpracy z r&oacute;żnymi systemami operacyjnymi dostęp do pliku wymaga niewielkiej liczby
+                przesunięć głowicy duża swoboda we wzajemnym ułożeniu plik&oacute;w i katalog&oacute;w na dysku wszystkie dane zapisane są w sp&oacute;jnych obszarach (alokacja ciągła)</p>
+            <p>Bibliografia: <a href="http://www.soisk-me.pl/klasa-i-windows/system-plikow">system plików</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
